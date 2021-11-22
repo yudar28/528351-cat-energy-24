@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дарья Юдина](https://up.htmlacademy.ru/adaptive/24/user/528351).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская] (https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
