@@ -8,6 +8,18 @@
   &--open {
     display: block;
   }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 0;
+
+    display: block;
+    width: 480px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 610px;
+  }
 }
 
 .main-nav__list {
@@ -17,7 +29,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+}
+
+.main-nav__item {
+  @media (min-width: @tablet-width) {
+    margin-left: 35px;
+  }
 }
 
 .main-nav__link {
@@ -37,5 +62,17 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+
+    font-weight: 400;
+    .font(18px, 24px);
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    .font(20px, 29.64px);
   }
 }

@@ -5,10 +5,29 @@
   width: 280px;
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: -45px;
+    width: 1220px;
+  }
 }
 
 .page-header__logo {
   flex-grow: 1;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 610px;
+  }
 }
 
 .page-header__toggle {
@@ -18,4 +37,8 @@
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
