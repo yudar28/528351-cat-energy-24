@@ -32,8 +32,8 @@
       <section class="form">
         <h2 class="form__title">Подбор программы</h2>
         <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__group">
+        <form class="form__action" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__group form__group--info-cat">
             <legend class="visually-hidden">Информация о коте</legend>
             <ul class="form__list">
               <li class="form__item">
@@ -51,7 +51,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--program">
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="form__program">
               <li class="form__program-item">
@@ -78,9 +78,9 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--contacts">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--contacts">
               <li class="form__item">
                 <label class="form__label" for="email">E-mail:<sup>*</sup></label>
                 <input class="form__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -92,12 +92,12 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--comment">
             <legend class="form__legend">Комментарий</legend>
             <textarea class="form__comment" name="comment" id="comment" cols="26" rows="10">Расскажите обо всех повадках кота</textarea>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--additionally">
             <legend class="form__legend">Дополнительно</legend>
             <ul class="form__additionally">
               <li class="form__additionally-item">
@@ -131,8 +131,10 @@
             </ul>
           </fieldset>
 
-          <button class="button form__submit" type="submit">отправить заявку</button>
-          <p class="form__note"><small><sup>*</sup> — Обязательные поля</small></p>
+          <div class="form__wrapper">
+            <button class="button form__submit" type="submit">отправить заявку</button>
+            <p class="form__note"><small><sup>*</sup> — Обязательные поля</small></p>
+          </div>
         </form>
 
       </section>
