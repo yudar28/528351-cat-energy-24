@@ -1,0 +1,26 @@
+.copyright__link {
+  margin: 21px 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .font(16px, 18.4px);
+  text-decoration: none;
+  color: #444444;
+
+  &:hover path {
+    fill: @element-basic-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
+.copyright__link span {
+  margin-right: 23px;
+}
