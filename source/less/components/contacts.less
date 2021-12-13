@@ -11,21 +11,27 @@
 }
 
 .contacts__cooperation {
-  margin: 0 auto;
-  width: 280px;
-  display: flex;
-  justify-content: space-between;
+  margin: 26px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2px;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    margin: 57px 70px 61px;
+
+    column-gap: 300px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 100px;
-    left: 7.64%;
+    top: 37px;
+    left: 2.64%;
 
     width: 565px;
+    padding: 56px 80px;
+    box-sizing: border-box;
+
+    column-gap: 87px;
 
     background-color: #ffffff;
     z-index: 1;
@@ -42,6 +48,7 @@
   color: #111111;
 
   @media (min-width: @tablet-width) {
+    padding-top: 3px;
     .font(20px, 26px);
   }
 }
@@ -53,7 +60,19 @@
   color: #444444;
 
   @media (min-width: @tablet-width) {
+    text-align: right;
     .font(16px, 20px);
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts__address span {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    padding-top: 20px;
   }
 }
 
@@ -63,6 +82,7 @@
 
 .contacts__map iframe {
   width: 100%;
+  display: block;
 }
 
 .contacts__map-icon {

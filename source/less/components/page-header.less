@@ -1,36 +1,53 @@
 .page-header {
   position: relative;
 
-  margin: 0 auto;
-  width: 280px;
+  width: auto;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    padding: 24px 30px 0;
+    width: auto;
     justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: -45px;
+    padding: 51px 0 0;
+    margin: 0 auto -110px;
     width: 1220px;
 
     z-index: 2;
-  }
-}
 
-.page-header--inner {
-  @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+    &--inner {
+      margin-bottom: 0;
+    }
   }
 }
 
 .page-header__logo {
   flex-grow: 1;
 
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-self: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     flex-grow: 0;
+
+    display: flex;
   }
 
   @media (min-width: @desktop-width) {
@@ -38,13 +55,104 @@
   }
 }
 
+.page-header__img {
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+    margin: 0 auto;
+
+    &--icon {
+      top: -4px;
+      right: -3px;
+    }
+
+    &--logo-name {
+      top: -1px;
+      right: 5px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &--icon {
+      margin-right: 12px;
+      width: 60.44px;
+      height: 49.8px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--icon {
+      margin-right: 14px;
+      width: 70.16px;
+      height: 59px;
+    }
+
+    &--logo-name {
+      margin-top: 4px;
+    }
+  }
+}
+
 .page-header__toggle {
+  position: relative;
+
   padding: 0;
-  width: 44px;
+  width: 56px;
+  height: 65px;
 
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+
+  &--close {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      width: 24px;
+      height: 2px;
+      background-color: #000000;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--nojs {
+    cursor: auto;
+    opacity: 0;
+
+    &:hover,
+    &:active {
+      opacity: 0;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     display: none;

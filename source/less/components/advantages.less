@@ -1,12 +1,16 @@
 .advantages {
-  margin: 0 auto;
-  width: 280px;
+  margin: 0 20px;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     width: 1220px;
   }
 }
@@ -20,12 +24,17 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
+    margin: 17px 30px 0;
     .font(60px, 60px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 41px 0 0;
   }
 }
 
 .advantages__list {
-  margin: 0;
+  margin: 40px 0 29px;
   padding: 0;
 
   display: flex;
@@ -34,13 +43,17 @@
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
+    margin: 72px 30px 32px;
+
     display: grid;
-    grid-template-columns: 230px 230px;
+    grid-template-columns: 230px 248px;
     column-gap: 154px;
-    row-gap: 77px;
+    row-gap: 63px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 72px 0 32px;
+
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
   }
@@ -50,8 +63,16 @@
   position: relative;
   margin-bottom: 20px;
 
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 20px;
+
+
   @media (min-width: @tablet-width) {
     margin-bottom: 70px;
+
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -60,7 +81,7 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: -40px;
+    top: -39px;
     right: 0;
 
     margin: 0;
@@ -79,19 +100,37 @@
   width: 60px;
   height: 60px;
 
+  display: flex;
+
   background-color: @element-basic-color;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.advantages__box svg {
+  margin: auto;
 }
 
 .advantages__description {
   margin: 0;
+  padding-top: 2px;
 
   .font(14px, 18px);
   color: #444444;
 
   @media (min-width: @tablet-width) {
-    margin-top: 31px;
+    margin-top: 30px;
 
     .font(16px, 24px);
     z-index: 1;
+  }
+}
+
+.advantages__description br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }

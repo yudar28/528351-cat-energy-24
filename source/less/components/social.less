@@ -1,12 +1,27 @@
 .social {
-  margin: 0;
   padding: 0;
 
-  width: 140px;
+  width: 46%;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 
   list-style-type: none;
+
+  @media (min-width: @desktop-width) {
+    width: 129px;
+  }
 }
+
+.social__link {
+  &:hover path {
+    fill: @element-basic-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+

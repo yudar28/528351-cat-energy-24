@@ -1,0 +1,138 @@
+.select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select__range {
+  position: relative;
+
+  order: 2;
+
+  width: 86px;
+  height: 14px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 426px;
+    height: 6px;
+
+    background-color: #dcdcdc;
+    border: none;
+  }
+}
+
+.select__range-button {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+
+  padding: 0;
+
+  width: 36px;
+  height: 6px;
+
+  background-color: @element-basic-color;
+
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: -14px;
+    left: 50%;
+
+    width: 34px;
+    height: 34px;
+
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      background-color: @element-basic-color;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      border-color: @element-basic-color;
+    }
+  }
+}
+
+.select__button {
+  padding: 0;
+
+  font-family: "Oswald", sans-serif;
+  .font(16px, 20px);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #eaeaea;
+  border: none;
+  cursor: pointer;
+
+  &--before {
+    margin-right: 15px;
+
+    order: 1;
+  }
+
+  &--after {
+    margin-left: 18px;
+
+    order: 3;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    .font(20px, 29.64px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      box-sizing: border-box;
+      border-top: 1px dotted rgba(0, 0, 0, 0.24);
+    }
+
+    &--before {
+      margin-right: 23px;
+    }
+
+    &--after {
+      margin-left: 23px;
+    }
+
+    &:hover {
+      &::after {
+        border-top-style: solid;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
