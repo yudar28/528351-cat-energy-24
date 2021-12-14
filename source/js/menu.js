@@ -8,4 +8,3 @@ navButton.addEventListener('click', function() {
   navMain.classList.toggle('main-nav--open');
   navButton.classList.toggle('page-header__toggle--close');
 })
-
