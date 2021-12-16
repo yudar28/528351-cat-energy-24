@@ -2,6 +2,8 @@
   width: 100%;
 
   &--inner {
+    padding-top: 1px;
+
     background-color: @bg-color-lighter;
   }
 }
@@ -83,10 +85,22 @@
 .contacts__map iframe {
   width: 100%;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }
 
 .contacts__map-icon {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: calc(50% - 26px);
+  right: calc(50% - 28px);
+
+  @media (min-width: @tablet-width) {
+    width: 113px;
+    height: 106px;
+
+    top: calc(50% - 90px);
+    right: calc(50% - 62px);
+  }
 }
