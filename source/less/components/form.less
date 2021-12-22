@@ -157,14 +157,21 @@
 .form__svg {
   position: absolute;
 
+  fill: none;
+
   &--email {
     top: 17px;
     right: 15px;
+
+    stroke: #222222;
   }
 
   &--phone {
     top: 14px;
     right: 13px;
+
+    stroke: none;
+    fill: #000000;
   }
 
   @media (min-width: @desktop-width) {
@@ -174,14 +181,24 @@
   }
 }
 
-.form__field:focus + .form__svg path {
-  stroke: @element-basic-color;
-  fill: @element-basic-color;
+.form__field:focus + .form__svg {
+  &--email {
+    stroke: @element-basic-color;
+  }
+
+  &--phone {
+    fill: @element-basic-color;
+  }
 }
 
-.form__field--error + .form__svg path {
-  stroke: #ff8282;
-  fill: #ff8282;
+.form__field--error + .form__svg {
+  &--email {
+    stroke: #ff8282;
+  }
+
+  &--phone {
+    fill: #ff8282;
+  }
 }
 
 .form__label {
