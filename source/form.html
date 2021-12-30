@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
 
@@ -164,6 +164,8 @@
           <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003006!2d30.32085871595745!3d59.938719169054345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2see!4v1637931117542!5m2!1sru!2see" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-icon-tablet.webp 1x, img/map-icon-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-icon.webp 1x, img/map-icon@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/map-icon-tablet.png 1x, img/map-icon-tablet@2x.png 2x">
               <img class="contacts__map-icon" src="img/map-icon.png" srcset="img/map-icon@2x.png 2x" width="57" height="53" alt="Иконка на карте.">
             </picture>
@@ -183,7 +185,7 @@
           <ul class="page-footer__social social">
             <li class="social__item">
               <a class="social__link" href="#">
-                <svg class="social__vk" width="23" height="16">
+                <svg class="social__vk" width="23" height="16" viewbox="0 0 23 16">
                   <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
                 </svg>
                 <span class="visually-hidden">мы вконтакте</span>
@@ -191,7 +193,7 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <svg class="social__instagram" width="16" height="16">
+                <svg class="social__instagram" width="16" height="16" viewbox="0 0 16 16">
                   <use xlink:href="img/sprite/sprite.svg#icon-instagram"></use>
                 </svg>
                 <span class="visually-hidden">мы в instagram</span>
@@ -199,7 +201,7 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <svg class="social__facebook" width="22" height="22">
+                <svg class="social__facebook" width="22" height="22" viewbox="0 0 22 22">
                   <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
                 </svg>
                 <span class="visually-hidden">мы в facebook</span>
@@ -210,8 +212,8 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span>HTML Academy</span>
-            <svg width="27" height="34">
-              <use xlink:href="img/sprite/sprite.svg#icon-htmlacademy"></use>
+            <svg width="27" height="34" viewbox="0 0 27 34">
+              <use xlink:href="img/sprite/sprite.svg#html-academy"></use>
             </svg>
           </a>
         </div>
