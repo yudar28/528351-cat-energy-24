@@ -15,13 +15,22 @@
   }
 }
 
+.social__link svg {
+  fill: #666666;
+}
+
+.social__link .social__facebook {
+  stroke: #666666;
+  fill: none;
+}
+
 .social__link {
   &:hover svg {
-    fill: #68b738;
+    fill: @element-basic-color;
   }
 
-  &:hover .social__facebook path {
-    stroke: #68b738;
+  &:hover .social__facebook {
+    stroke: @element-basic-color;
     fill: none;
   }
 
