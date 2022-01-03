@@ -8,6 +8,8 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -45,10 +47,10 @@
             <article class="catalog__item">
               <a class="catalog__link-img" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-1-tablet.webp 1x, img/catalog-products/catalog-1-tablet@2x.webp 2x" width="161" height="172">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-1-tablet.webp 1x, img/catalog-products/catalog-1-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/catalog-products/catalog-1.webp 1x, img/catalog-products/catalog-1@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-1-tablet.png 1x, img/catalog-products/catalog-1-tablet@2x.png 2x" width="161" height="172">
-                  <img class="catalog__img" width="68" height="86" src="img/catalog-products/catalog-1.png" srcset="img/catalog-products/catalog-1@2x.png 2x" alt="Оранжевая упаковка cat energy 500 грамм со вкусом курицы">
+                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-1-tablet.png 1x, img/catalog-products/catalog-1-tablet@2x.png 2x">
+                  <img class="catalog__img catalog__img--small" width="68" height="86" src="img/catalog-products/catalog-1.png" srcset="img/catalog-products/catalog-1@2x.png 2x" alt="Оранжевая упаковка cat energy 500 грамм со вкусом курицы">
                 </picture>
               </a>
               <div class="catalog__empty"></div>
@@ -76,12 +78,12 @@
             <article class="catalog__item">
               <a class="catalog__link-img" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-products/catalog-2-desktop.webp 1x, img/catalog-products/catalog-2-desktop@2x.webp 2x" width="172" height="202">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-2-tablet.webp 1x, img/catalog-products/catalog-2-tablet@2x.webp 2x" width="168" height="206">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-products/catalog-2-desktop.webp 1x, img/catalog-products/catalog-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-2-tablet.webp 1x, img/catalog-products/catalog-2-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/catalog-products/catalog-2.webp 1x, img/catalog-products/catalog-2@2x.webp 2x">
-                  <source media="(min-width: 1440px)" srcset="img/catalog-products/catalog-2-desktop.png 1x, img/catalog-products/catalog-2-desktop@2x.png 2x" width="172" height="202">
-                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-2-tablet.png 1x, img/catalog-products/catalog-2-tablet@2x.png 2x" width="168" height="206">
-                  <img class="catalog__img" width="84" height="101" src="img/catalog-products/catalog-2.png" srcset="img/catalog-products/catalog-2@2x.png 2x" alt="Оранжевая упаковка cat energy 1000 грамм со вкусом курицы">
+                  <source media="(min-width: 1440px)" srcset="img/catalog-products/catalog-2-desktop.png 1x, img/catalog-products/catalog-2-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-2-tablet.png 1x, img/catalog-products/catalog-2-tablet@2x.png 2x">
+                  <img class="catalog__img catalog__img--large" width="84" height="101" src="img/catalog-products/catalog-2.png" srcset="img/catalog-products/catalog-2@2x.png 2x" alt="Оранжевая упаковка cat energy 1000 грамм со вкусом курицы">
                 </picture>
               </a>
               <div class="catalog__empty"></div>
@@ -109,10 +111,10 @@
             <article class="catalog__item">
               <a class="catalog__link-img" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-3-tablet.webp 1x, img/catalog-products/catalog-3-tablet@2x.webp 2x" width="163" height="174">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-3-tablet.webp 1x, img/catalog-products/catalog-3-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/catalog-products/catalog-3.webp 1x, img/catalog-products/catalog-3@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-3-tablet.png 1x, img/catalog-products/catalog-3-tablet@2x.png 2x" width="163" height="174">
-                  <img class="catalog__img" width="68" height="78" src="img/catalog-products/catalog-3.png" srcset="img/catalog-products/catalog-3@2x.png 2x" alt="Зеленая упаковка cat energy 500 грамм со вкусом рыбы">
+                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-3-tablet.png 1x, img/catalog-products/catalog-3-tablet@2x.png 2x">
+                  <img class="catalog__img catalog__img--small" width="68" height="78" src="img/catalog-products/catalog-3.png" srcset="img/catalog-products/catalog-3@2x.png 2x" alt="Зеленая упаковка cat energy 500 грамм со вкусом рыбы">
                 </picture>
               </a>
               <div class="catalog__empty"></div>
@@ -140,12 +142,12 @@
             <article class="catalog__item">
               <a class="catalog__link-img" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-products/catalog-4-desktop.webp 1x, img/catalog-products/catalog-4-desktop@2x.webp 2x" width="172" height="196">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-4-tablet.webp 1x, img/catalog-products/catalog-4-tablet@2x.webp 2x" width="168" height="200">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-products/catalog-4-desktop.webp 1x, img/catalog-products/catalog-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-4-tablet.webp 1x, img/catalog-products/catalog-4-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/catalog-products/catalog-4.webp 1x, img/catalog-products/catalog-4@2x.webp 2x">
-                  <source media="(min-width: 1440px)" srcset="img/catalog-products/catalog-4-desktop.png 1x, img/catalog-products/catalog-4-desktop@2x.png 2x," width="172" height="196">
-                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-4-tablet.png 1x, img/catalog-products/catalog-4-tablet@2x.png 2x" width="168" height="200">
-                  <img class="catalog__img" width="84" height="101" src="img/catalog-products/catalog-4.png" srcset="img/catalog-products/catalog-4@2x.png 2x" alt="Зеленая упаковка cat energy 1000 грамм со вкусом рыбы">
+                  <source media="(min-width: 1440px)" srcset="img/catalog-products/catalog-4-desktop.png 1x, img/catalog-products/catalog-4-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-4-tablet.png 1x, img/catalog-products/catalog-4-tablet@2x.png 2x">
+                  <img class="catalog__img catalog__img--large" width="84" height="101" src="img/catalog-products/catalog-4.png" srcset="img/catalog-products/catalog-4@2x.png 2x" alt="Зеленая упаковка cat energy 1000 грамм со вкусом рыбы">
                 </picture>
               </a>
               <div class="catalog__empty"></div>
@@ -173,10 +175,10 @@
             <article class="catalog__item">
               <a class="catalog__link-img" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-5-tablet.webp 1x, img/catalog-products/catalog-5-tablet@2x.webp 2x" width="161" height="171">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-5-tablet.webp 1x, img/catalog-products/catalog-5-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/catalog-products/catalog-5.webp 1x, img/catalog-products/catalog-5@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-5-tablet.png 1x, img/catalog-products/catalog-5-tablet@2x.png 2x" width="161" height="171">
-                  <img class="catalog__img" width="68" height="78" src="img/catalog-products/catalog-5.png" srcset="img/catalog-products/catalog-5@2x.png 2x" alt="Синяя упаковка cat energy 500 грамм со вкусом гречки">
+                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-5-tablet.png 1x, img/catalog-products/catalog-5-tablet@2x.png 2x">
+                  <img class="catalog__img catalog__img--small" width="68" height="78" src="img/catalog-products/catalog-5.png" srcset="img/catalog-products/catalog-5@2x.png 2x" alt="Синяя упаковка cat energy 500 грамм со вкусом гречки">
                 </picture>
               </a>
               <div class="catalog__empty"></div>
@@ -204,12 +206,12 @@
             <article class="catalog__item">
               <a class="catalog__link-img" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-products/catalog-6-desktop.webp 1x, img/catalog-products/catalog-6-desktop@2x.webp 2x" width="172" height="196">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-6-tablet.webp 1x, img/catalog-products/catalog-6-tablet@2x.webp 2x" width="168" height="200">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-products/catalog-6-desktop.webp 1x, img/catalog-products/catalog-6-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-6-tablet.webp 1x, img/catalog-products/catalog-6-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/catalog-products/catalog-6.webp 1x, img/catalog-products/catalog-6@2x.webp 2x">
-                  <source media="(min-width: 1440px)" srcset="img/catalog-products/catalog-6-desktop.png 1x, img/catalog-products/catalog-6-desktop@2x.png 2x" width="172" height="196">
-                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-6-tablet.png 1x, img/catalog-products/catalog-6-tablet@2x.png 2x" width="168" height="200">
-                  <img class="catalog__img" width="84" height="100" src="img/catalog-products/catalog-6.png" srcset="img/catalog-products/catalog-6@2x.png 2x" alt="Синяя упаковка cat energy 1000 грамм со вкусом гречки">
+                  <source media="(min-width: 1440px)" srcset="img/catalog-products/catalog-6-desktop.png 1x, img/catalog-products/catalog-6-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-6-tablet.png 1x, img/catalog-products/catalog-6-tablet@2x.png 2x">
+                  <img class="catalog__img catalog__img--large" width="84" height="100" src="img/catalog-products/catalog-6.png" srcset="img/catalog-products/catalog-6@2x.png 2x" alt="Синяя упаковка cat energy 1000 грамм со вкусом гречки">
                 </picture>
               </a>
               <div class="catalog__empty"></div>
@@ -237,10 +239,10 @@
             <article class="catalog__item">
               <a class="catalog__link-img" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-7-tablet.webp 1x, img/catalog-products/catalog-7-tablet@2x.webp 2x" width="163" height="174">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-products/catalog-7-tablet.webp 1x, img/catalog-products/catalog-7-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/catalog-products/catalog-7.webp 1x, img/catalog-products/catalog-7@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-7-tablet.png 1x, img/catalog-products/catalog-7-tablet@2x.png 2x" width="163" height="174">
-                  <img class="catalog__img" width="72" height="84" src="img/catalog-products/catalog-7.png" srcset="img/catalog-products/catalog-7@2x.png 2x" alt="Фиолетовая упаковка cat energy 500 грамм со вкусом риса">
+                  <source media="(min-width: 768px)" srcset="img/catalog-products/catalog-7-tablet.png 1x, img/catalog-products/catalog-7-tablet@2x.png 2x">
+                  <img class="catalog__img catalog__img--small" width="72" height="84" src="img/catalog-products/catalog-7.png" srcset="img/catalog-products/catalog-7@2x.png 2x" alt="Фиолетовая упаковка cat energy 500 грамм со вкусом риса">
                 </picture>
               </a>
               <div class="catalog__empty"></div>
@@ -269,10 +271,10 @@
               <a class="catalog__more-icon" href="#"><span class="visually-hidden">показать больше товаров</span></a>
               <p class="catalog__description">Показать еще 100500 товаров</p>
               <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-              <a class="button catalog__button--more" href="#">показать все</a>
+              <a class="button catalog__button catalog__button--more" href="#">показать все</a>
             </div>
           </div>
-        </ul>
+        </div>
       </section>
 
       <section class="additional">
