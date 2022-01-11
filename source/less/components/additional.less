@@ -4,6 +4,27 @@
   background-color: #ffffff;
   z-index: 1;
 
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
+  }
+}
+
+.additional__title {
+  position: relative;
+  margin: 25px 0 35px;
+
+  display: inline-block;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  .font(24px, 24px);
+  font-weight: 400;
+  color: #000000;
+
   &::before,
   &::after {
     content: "";
@@ -13,7 +34,7 @@
 
   &::before {
     top: 14px;
-    width: 267px;
+    width: 120%;
     height: 4px;
 
     background-color: #ffffff;
@@ -32,12 +53,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px;
+    margin: 68px 0 80px;
+    padding: 0 36px 0 37px;
+    .font(36px, 36px);
 
     &::before {
       top: 21px;
       left: 0;
-      width: 411px;
+      width: 100%;
     }
 
     &::after {
@@ -47,13 +70,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
-    width: 1220px;
+    margin: 76px 0 80px;
+    padding: 0;
 
     &::before {
       top: 22px;
       left: -40px;
-      width: 413px;
+      width: 120%;
     }
 
     &::after {
@@ -61,26 +84,6 @@
       width: 120vw;
       left: -400px;
     }
-  }
-}
-
-.additional__title {
-  margin: 25px 0 35px;
-
-  font-family: "Oswald", "Arial", sans-serif;
-  .font(24px, 24px);
-  font-weight: 400;
-  color: #000000;
-
-  @media (min-width: @tablet-width) {
-    margin: 68px 0 80px;
-    padding: 0 36px 0 37px;
-    .font(36px, 36px);
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 76px 0 80px;
-    padding: 0;
   }
 }
 
