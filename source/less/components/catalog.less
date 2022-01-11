@@ -5,7 +5,7 @@
 .catalog__title {
   margin: 26px 20px 38px;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   .font(36px, 40px);
   font-weight: 400;
   color: #000000;
@@ -122,6 +122,27 @@
   }
 }
 
+.catalog__img {
+  @media (min-width: @tablet-width) {
+    &--small {
+      width: 163px;
+      height: 173px;
+    }
+
+    &--large {
+      width: 168px;
+      height: 203px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--large {
+      width: 172px;
+      height: 200px;
+    }
+  }
+}
+
 .catalog__empty {
   @media (min-width: @tablet-width) {
     height: 140px;
@@ -145,7 +166,7 @@
   margin: 0;
   padding-right: 45px;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   .font(16px, 20px);
   font-weight: 400;
   color: #222222;
@@ -282,7 +303,7 @@
 .catalog__description {
   margin: 39px 0 0;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   .font(16px, 20px);
   font-weight: 400;
   color: #111111;
