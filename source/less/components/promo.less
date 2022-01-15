@@ -90,27 +90,39 @@
   }
 }
 
-.promo__img {
-  display: block;
+.promo__container {
   margin: 29px auto 0;
+  width: 280px;
+  height: 270px;
 
   @media (min-width: @tablet-width) {
-    margin: 21px 0 0 -43px;
-    width: 710px;
+    margin-bottom: -8px;
+    width: 709px;
     height: 609px;
-
-    align-self: center;
-    order: 4;
-    z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 120px;
-    left: 590px;
+    left: 635px;
 
     width: 552px;
     height: 499px;
+  }
+}
+
+.promo__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 28px auto 0;
+
+  @media (min-width: @tablet-width) {
+    margin: -8px 0 0 -88px;
+
+    align-self: center;
+    order: 4;
+    z-index: 1;
   }
 }
 

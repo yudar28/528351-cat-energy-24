@@ -9,7 +9,7 @@
   }
 }
 
-.control-mark {
+.control__mark {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,11 +26,11 @@
   }
 }
 
-.control-input[type="radio"] + .control-mark {
+.control__input[type="radio"] + .control__mark {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-mark {
+.control__input[type="radio"]:checked + .control__mark {
   &::before {
     content: "";
     position: absolute;
@@ -50,7 +50,7 @@
   }
 }
 
-.control-input[type="checkbox"]:checked + .control-mark {
+.control__input[type="checkbox"]:checked + .control__mark {
   &::before {
     content: "";
     position: absolute;
@@ -69,20 +69,24 @@
   }
 }
 
-.control-input:hover ~ .control-mark {
+.control__input:hover ~ .control__mark {
   border-color: #bababa;
 }
 
-.control-input:focus ~ .control-mark {
+.control__input:focus ~ .control__mark {
   border-color: #444444;
 }
 
-.control-input:active ~ .control-label,
-.control-input:active ~ .control-mark {
+.control__input:active ~ .control__label,
+.control__input:active ~ .control__mark {
   opacity: 0.3;
 }
 
-.control-label {
+.control__label {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 5px;
+  }
+
   display: block;
   padding-top: 6px;
   color: #222222;

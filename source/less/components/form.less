@@ -90,7 +90,7 @@
     }
 
     &--contacts {
-      margin: 26px 0 44px;
+      margin: 26px 0 43px;
     }
   }
 
@@ -244,20 +244,20 @@
   }
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.form__field::-webkit-outer-spin-button,
+.form__field::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
 
 .form__program {
-  margin: 22px 20px 25px;
+  margin: 22px 20px 24px;
   padding: 0;
 
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    margin: 25px 28px 29px;
+    margin: 25px 28px 27px;
   }
 }
 
@@ -351,9 +351,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .form__comment {
   margin: 38px 20px 21px;
   padding: 9px 12px 9px 15px;
+
   width: 87.5%;
   min-height: 150px;
-  overflow: scroll;
+  max-height: 150px;
 
   font-family: "Oswald", "Arial", sans-serif;
   .font(16px, 18px);
@@ -364,7 +365,7 @@ input[type="number"]::-webkit-inner-spin-button {
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
 
-  resize: none;
+  resize: vertical;
 
   &:hover {
     border-color: #bababa;
@@ -378,14 +379,16 @@ input[type="number"]::-webkit-inner-spin-button {
   @media (min-width: @tablet-width) {
     margin: 76px 70px 58px;
     padding-left: 18px;
+
     width: 82%;
     min-height: 174px;
+    max-height: 174px;
 
     .font(20px, 30px);
   }
 
   @media (min-width: @desktop-width) {
-    margin: 76px 0 58px;
+    margin: 76px 0 62px;
     width: 1220px;
   }
 }
@@ -397,7 +400,7 @@ input[type="number"]::-webkit-inner-spin-button {
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    margin: 58px 70px 40px;
+    margin: 58px 70px 38px;
 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
@@ -466,10 +469,14 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
-    padding-left: 43px;
+    margin: -5px 0 0;
+    padding-left: 31px;
 
     text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 41px;
   }
 }
 
